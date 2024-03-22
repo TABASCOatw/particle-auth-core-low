@@ -3,20 +3,18 @@
     <img src="https://i.imgur.com/xmdzXU4.png" />
   </a>
   <h3>
-    Particle Auth Core Avalanche Demo
+    @particle-network/auth-core Demo Application
   </h3>
 </div>
 
-⚡️ Full-stack demo application showcasing the implementation of Particle Auth Core (Particle Network's flagship Wallet-as-a-Service SDK) within applications built on Avalanche. Specifically, this demo facilitates social login, the assignment of a smart account, and the execution of either a single user operation, or a batched user operation (both of which burn 0.0001 AVAX per transaction).
+⚡️ Basic demo application which uses `@particle-network/auth-core` rather than `@particle-network/auth-core-modal` to initiate social login and send transactions. This is a lower-level library and powers `@particle-network/auth-core-modal` - most additional functionality beyodn the aforementioned (login and transaction execution) will need to be built by the developer implementing this library.
 
-🛠️ Try the demo: https://particle-avalanche-auth-demo.replit.app
+🛠️ Try the demo: https://particle-auth-core-low.replit.app
 
 Built using **Particle Auth Core**, **TypeScript**, **Particle AA SDK**
 
 ## 🔑 Particle Auth Core
 Particle Auth Core, a component of Particle Network's Wallet-as-a-Service, enables seamless onboarding to an application-embedded MPC-TSS/AA wallet facilitated by social login, such as Google, GitHub, email, phone number, etc. - as an alternative to Particle Auth, the Auth Core SDK comes with more control over the modal itself, application-embedded popups rather than redirects, and so on.
-
-[Demo screenshot](https://i.imgur.com/y1EJfg4.png)
 
 ##
 
@@ -26,7 +24,7 @@ Particle Auth Core, a component of Particle Network's Wallet-as-a-Service, enabl
 
 ### Clone this repository
 ```
-git clone https://github.com/TABASCOatw/particle-avalanche-auth-core-demo.git
+git clone https://github.com/TABASCOatw/particle-auth-core-low.git
 ```
 
 ### Install dependencies
@@ -39,7 +37,7 @@ npm install
 ```
 
 ### Set environment variables
-This project requires a number of keys from Particle Network and WalletConnect to be defined in `.env`. The following should be defined:
+This project requires a number of keys from Particle Network to be defined in `.env`. The following should be defined:
 - `REACT_APP_APP_ID`, the ID of the corresponding application in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
 - `REACT_APP_PROJECT_ID`, the ID of the corresponding project in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
 -  `REACT_APP_CLIENT_KEY`, the client key of the corresponding project in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
