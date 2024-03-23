@@ -139,9 +139,6 @@ const App = () => {
             <img src="https://i.imgur.com/afIaQJC.png" alt="Twitter" className="icon"/>
             Sign in with X
           </button>
-          <button className="sign-button other-button" onClick={() => handleLogin('')}>
-            <img src="https://i.imgur.com/VRftF1b.png" alt="Twitter" className="icon"/>
-          </button>
         </div>
       ) : (
         <div className="profile-card">
