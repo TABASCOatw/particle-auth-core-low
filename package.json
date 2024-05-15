@@ -23,7 +23,7 @@
     "@particle-network/auth": "latest",
     "@particle-network/auth-core": "1.3.6",
     "@particle-network/auth-core-modal": "latest",
-    "@particle-network/chains": "^latest",
+    "@particle-network/chains": "^1.4.9",
     "@particle-network/provider": "^1.3.2",
     "@particle-network/thresh-sig": "^0.7.8",
     "@particle-network/wallet": "^1.3.4",
